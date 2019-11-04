@@ -1,33 +1,28 @@
 body {
-	font-family: 'Helvetica';
-	background-color: #ffffff;
+	font-family: 'Courier New';
+	background-color: #000000;
+	overflow: hidden;
 }
 
 p {
-	color: #000000;
+	color: #00FF00;
     margin: auto;
     width: 50%;
     padding-bottom: 20px;
 }
 
 h1 {
-	color: #000000;
-    margin: auto;
-    width: 50%;
-}
-
-h2 {
-	color: #000000;
+	color: #00FF00;
     margin: auto;
     width: 50%;
 }
 
 a {
-	color: #4aaaff;
+	color: #e3ff95;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #408fff;
+	color: #e3ff95;
 	text-decoration: underline;
 }

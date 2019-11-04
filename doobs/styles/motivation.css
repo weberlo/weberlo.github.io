@@ -1,0 +1,32 @@
+body {
+	animation-duration: 3s;
+}
+
+@keyframes swingIn {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	} 50%{
+		opacity: 0;
+	}100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+iframe#justDoIt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	
+	transition: opacity 1s, width 1s, height 1s;
+	transition-timing-function: ease-in-out;
+}
+
+a#back {
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	transform: translateX(-50%);
+}

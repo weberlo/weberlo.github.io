@@ -1,0 +1,51 @@
+div#doobs {
+	position: absolute;
+	bottom: 70%;
+	width: 100%;
+	height: 128px;
+
+	margin-bottom: 10px;
+}
+
+img#doobsFace {
+	width: 128px;
+	height: 128px;
+	border-radius: 10px;
+	-webkit-transition: -webkit-filter 0.35s;
+	transition: transform 0.35s;
+
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img#doobsFace:hover {
+    -webkit-filter: brightness(1.1) contrast(1.2);
+    transform: scaleX(1.2) scaleY(1.2) translateY(-15px);
+}
+
+#doobsInfo {
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	height: 70%;
+}
+
+ul#links {
+	text-align: center;
+}
+
+ul#links li {
+	font-size: 50px;
+	display: inline;
+
+	transition: font-size 0.35s;
+
+	position: relative;
+	top: 0%;
+}
+
+ul#links li:hover {
+	font-size: 60px;
+}

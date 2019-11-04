@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<title>Doobs' Domain</title>
+	<link rel="shortcut icon" type="image/x-icon" href="res/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
+	<link rel="stylesheet" type="text/css" href="styles/motivation.css">
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#justDoIt").css({ "opacity": "0", "width": "84", "height": "47" });
+			$("#justDoIt").css({ "display": "inline" });
+
+			setTimeout(function() {
+				$("#justDoIt").css({ "opacity": "1", "width": "840", "height": "473" }, 1000, 'easeInOutExpo');
+			}, 2000);
+		})
+	</script>
+	</head>
+	<body>
+		<iframe id="justDoIt" width="840" height="473" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" style="display: none;" allowfullscreen></iframe>
+		<a id="back" href="index.html">Back</a>
+	</body>
+</html>
