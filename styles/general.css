@@ -1,0 +1,33 @@
+body {
+	font-family: 'Helvetica';
+	background-color: #ffffff;
+}
+
+p {
+	color: #000000;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+h1 {
+	color: #000000;
+    margin: auto;
+    width: 50%;
+}
+
+h2 {
+	color: #000000;
+    margin: auto;
+    width: 50%;
+}
+
+a {
+	color: #4aaaff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #408fff;
+	text-decoration: underline;
+}

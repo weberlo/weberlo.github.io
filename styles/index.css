@@ -1,0 +1,64 @@
+div#faceDiv {
+	position: relative;
+	width: 100%;
+	height: 256px;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+img#faceImg {
+	width: 256px;
+	height: 256px;
+	border-radius: 10px;
+/*
+	-webkit-transition: -webkit-filter 0.35s;
+	transition: transform 0.35s;
+*/
+
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+img#faceImg:hover {
+    -webkit-filter: brightness(1.1) contrast(1.1);
+    transform: scaleX(1.05) scaleY(1.05) translateY(0px);
+}
+*/
+
+#loganHeader {
+	font-size: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#infoDiv {
+	position: relative;
+	width: 100%;
+}
+
+ul#links {
+	text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul#links li {
+	font-size: 45px;
+	display: inline;
+
+	transition: font-size 0.35s;
+
+	position: relative;
+	top: 0%;
+}
+
+/*
+ul#links li:hover {
+	font-size: 60px;
+}
+*/
