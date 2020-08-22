@@ -9,6 +9,8 @@ permalink: /projects/
 # µTVM
 _Role: Principal Investigator_
 
+![microtvm-logo](/images/microtvm-logo.png)
+
 µTVM brings the power of [Apache
 TVM](https://github.com/apache/incubator-tvm) to bare-metal devices. By
 building a lightweight and device-agnostic runtime for interacting with
@@ -32,19 +34,10 @@ using only timing information.
 
 ![microtvm-autotvm-overview](/images/microtvm-autotvm-overview.png)
 
-# RelayBench
-_Role: Co-Investigator_
-
-RelayBench is a framework for running language- and framework-agnostic
-machine learning experiments, with the primary goal being *reproducibility*.
-Once experiments are defined by the user, subsystems can be defined to
-analyze and make use of the collected data. As a "killer app" for RelayBench,
-I developed a push-button evaluation for the most recent [Relay
-paper](https://arxiv.org/abs/1904.08368). That is, all of the experiments
-and graphs were run and generated automatically.
-
 # Relay
 _Role: Collaborator_
+
+<b>Every time you ask Amazon Alexa a question, Relay is being used.</b>
 
 Relay is a functional and differentiable intermediate representation for
 machine learning applications, which ditches the design of traditional
@@ -61,4 +54,15 @@ low-level IR. By using a two-level IR split, Relay significantly outperforms
 existing machine learning frameworks (shown below).
 
 <!-- TODO: Replace "InterNeuron" with "Relay" -->
-![relay-performance](/images/cnn-comp-gpu.png)
+![relay-wins-lmao](/images/relay-wins-lmao.png)
+
+# RelayBench
+_Role: Co-Investigator_
+
+RelayBench is a framework for running language- and framework-agnostic
+machine learning experiments, with the primary goal being *reproducibility*.
+Once experiments are defined by the user, subsystems can be defined to
+analyze and make use of the collected data. As a "killer app" for RelayBench,
+I developed a push-button evaluation for the most recent [Relay
+paper](https://arxiv.org/abs/1904.08368), meaning all of the experiments
+and graphs were run and generated automatically.
