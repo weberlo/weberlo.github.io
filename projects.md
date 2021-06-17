@@ -56,7 +56,7 @@ existing machine learning frameworks (shown below).
 <!-- TODO: Replace "InterNeuron" with "Relay" -->
 ![relay-wins-lmao](/images/relay-wins-lmao.png)
 
-# RelayBench
+<!-- # RelayBench
 _Role: Co-Investigator_
 
 RelayBench is a framework for running language- and framework-agnostic
@@ -65,4 +65,4 @@ Once experiments are defined by the user, subsystems can be defined to
 analyze and make use of the collected data. As a "killer app" for RelayBench,
 I developed a push-button evaluation for the most recent [Relay
 paper](https://arxiv.org/abs/1904.08368), meaning all of the experiments
-and graphs were run and generated automatically.
+and graphs were run and generated automatically. -->
