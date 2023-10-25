@@ -8,11 +8,11 @@ layout: default
   </h1> -->
   <p>
   My name is Logan Weber,
-  and I'm a third-year PhD student at MIT,
-  advised by <a href="https://people.csail.mit.edu/saman/">Saman Amarasinghe</a>
-  and <a href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>.
+  and I'm a PhD student at MIT,
+  advised by <a href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a> and <a href="https://people.csail.mit.edu/saman/">Saman Amarasinghe</a>.
   <!-- My collaborators and I investigate the theoretical limits of programming language embeddings and evaluate the gap between these limits and solutions produced by neural methods. -->
-  My collaborators and I investigate properties of programming languages that govern the ability of neural networks to embed them.
+  <!-- My collaborators and I investigate properties of programming languages that govern the ability of neural networks to embed them. -->
+  I work at the intersection of programming languages and deep learning.
   </p>
 
   <!-- <p>
@@ -43,6 +43,19 @@ layout: default
   descriptions.
 
   <ul>
+    <!-- <li>
+      <b><a href="TODOLINKTOPREPRINTLINKTOPREPRINT">Equivalence-Preserving Embeddings</a></b>,
+      <b>TODO Upload some preprint</b>
+      This project is something I worked on earlier in grad school.
+      Initially, we were interested in developing a technique to embed programming languages by leveraging their unique properties.
+      At the time, there was a big push for models that were adversarially robust, and the usual way that was implemented was by training for models whose predictions were invariant to semantics-preserving transformations.
+      At some point, we realized we didn't even know how difficult of a task this is, so our goal became to study the computational complexity of embedding functions that possess this property.
+      The core insights that came from this study were (1) that a language must have finitely many semantic equivalence classes for such an embedding function to exist and (2) that such an embedding function exists iff your language has an efficient canonicalizer.
+      The theory isn't deep here, and with our definitions in place, these insights are actually quite trivial.
+      So the contribution here was really just a lucid set of definitions rather than a theory of great technical complexity.
+      We had trouble publishing this work because it turns out the languages that can be tractably embedded are extremely simple, so the work can be construed as pessimistic.
+      Also, because the theory is so clean and simple, it really does come off as trivial once you've read through it, so we should have pulled the classic trick of obfuscating your work behind a layer of technical fluff... oh well.
+    </li> -->
     <li>
       <b><a href="https://github.com/apache/incubator-tvm/issues/2563">µTVM</a></b>,
       a compilers approach to ML on microcontrollers using The Power Of <a href="https://arxiv.org/abs/1802.04799">TVM</a>.</li>
