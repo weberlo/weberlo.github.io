@@ -12,7 +12,9 @@ layout: default
   advised by <a href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a> and <a href="https://people.csail.mit.edu/saman/">Saman Amarasinghe</a>.
   <!-- My collaborators and I investigate the theoretical limits of programming language embeddings and evaluate the gap between these limits and solutions produced by neural methods. -->
   <!-- My collaborators and I investigate properties of programming languages that govern the ability of neural networks to embed them. -->
-  I work at the intersection of programming languages and deep learning.
+  <!-- I work at the intersection of programming languages and deep learning. -->
+  <!-- The questions that drive my research are: (1) what can neural networks learn about programs and (2) how can we improve their ability to understand programs? -->
+  The questions that drives my research is: what can neural networks learn about programs?
   </p>
 
   <!-- <p>
@@ -43,10 +45,11 @@ layout: default
   descriptions.
 
   <ul>
-    <!-- <li>
-      <b><a href="TODOLINKTOPREPRINTLINKTOPREPRINT">Equivalence-Preserving Embeddings</a></b>,
-      <b>TODO Upload some preprint</b>
-      This project is something I worked on earlier in grad school.
+    <li>
+      <b>Semantic Program Embeddings</b>,
+      a project to theoretically characterize the difficulty of computing embeddings of programs that preserve semantic equivalences.
+      Check the preprints below for more details!
+      <!-- This project is something I worked on earlier in grad school.
       Initially, we were interested in developing a technique to embed programming languages by leveraging their unique properties.
       At the time, there was a big push for models that were adversarially robust, and the usual way that was implemented was by training for models whose predictions were invariant to semantics-preserving transformations.
       At some point, we realized we didn't even know how difficult of a task this is, so our goal became to study the computational complexity of embedding functions that possess this property.
@@ -54,8 +57,8 @@ layout: default
       The theory isn't deep here, and with our definitions in place, these insights are actually quite trivial.
       So the contribution here was really just a lucid set of definitions rather than a theory of great technical complexity.
       We had trouble publishing this work because it turns out the languages that can be tractably embedded are extremely simple, so the work can be construed as pessimistic.
-      Also, because the theory is so clean and simple, it really does come off as trivial once you've read through it, so we should have pulled the classic trick of obfuscating your work behind a layer of technical fluff... oh well.
-    </li> -->
+      Also, because the theory is so clean and simple, it really does come off as trivial once you've read through it, so we should have pulled the classic trick of obfuscating your work behind a layer of technical fluff... oh well. -->
+    </li>
     <li>
       <b><a href="https://github.com/apache/incubator-tvm/issues/2563">µTVM</a></b>,
       a compilers approach to ML on microcontrollers using The Power Of <a href="https://arxiv.org/abs/1802.04799">TVM</a>.</li>
@@ -73,7 +76,7 @@ layout: default
   <br>
   <a href="https://jroesch.github.io/">Jared Roesch</a>,
   <a href="https://homes.cs.washington.edu/~sslyu/">Steven Lyubomirsky</a>,
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
   <a href="https://joshmpollock.com">Josh Pollock</a>,
   <a href="https://github.com/MarisaKirisame">Marisa Kirisame</a>,
   <a href="https://homes.cs.washington.edu/~tqchen/">Tianqi Chen</a>,
@@ -82,14 +85,36 @@ layout: default
   <i>Proceedings of the 2nd ACM SIGPLAN International Workshop on Machine Learning and Programming Languages (MAPL 2018).</i>
   </p>
 
-  <h1>Arxiv Preprints</h1>
+  <h1>Preprints</h1>
+  
+  <p>
+  <a href="{% link assets/a_theory_of_equivalence_preserving_embeddings.pdf %}"><b></b></a>
+  <br>
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
+  <a href="https://web.mit.edu/jmmichel/www/">Jesse Michel</a>,
+  <a href="https://alexrenda.com">Alex Renda</a>,
+  <a href="https://people.csail.mit.edu/saman/">Saman Amarasinghe</a>,
+  <a href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>,
+  <br>
+  </p>
+
+  <p>
+  <a href="{% link assets/a_theory_of_semantic_program_embeddings.pdf %}"><b></b></a>
+  <br>
+  <a href="https://web.mit.edu/jmmichel/www/">Jesse Michel</a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
+  <a href="https://people.csail.mit.edu/saman/">Saman Amarasinghe</a>,
+  <a href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>,
+  <br>
+  </p>
+
   <p>
   <a href="https://arxiv.org/abs/1904.08368"><b>Relay: A High-Level Compiler for Deep Learning</b></a>
   <br>
   <a href="https://jroesch.github.io/">Jared Roesch</a>,
   <a href="https://homes.cs.washington.edu/~sslyu/">Steven Lyubomirsky</a>,
   <a href="https://github.com/MarisaKirisame">Marisa Kirisame</a>,
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
   <a href="https://joshmpollock.com">Josh Pollock</a>,
   <a href="https://homes.cs.washington.edu/~vegaluis/">Luis Vega</a>,
   <a href="http://ziheng.org/">Ziheng Jiang</a>,
@@ -100,12 +125,12 @@ layout: default
   </p>
 
   <h1>Miscellaneous Writing</h1>
-  <p>I have a budding blog <a href="https://www.notion.so/Writing-To-Think-12f6253f12e44090b380f60482810434"><b>here</b></a> and some artifacts from course projects and industry collaborations below.</p>
+  <p>I have a (currently inactive) blog <a href="https://www.notion.so/Writing-To-Think-12f6253f12e44090b380f60482810434"><b>here</b></a> and some artifacts from course projects and industry collaborations below.</p>
 
   <p>
   <a href="{% link assets/formal_closest_pair.pdf %}"><b>Formal Verification of a Closest Pair Algorithm</b></a>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>
   <br>
   <i>MIT 6.850 (Geometric Computing) Final Project</i>
   </p>
@@ -113,7 +138,7 @@ layout: default
   <p>
   <a href="{% link assets/reeb_graph_csg.pdf %}"><b>Towards An Algorithm for Reeb Graph Construction on Constructive Solid Geometry</b></a>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>
   <br>
   <i>MIT 6.838 (Shape Analysis) Final Project</i>
   </p>
@@ -121,7 +146,7 @@ layout: default
   <p>
   <a href="{% link assets/fastish_algorithms_for_integer_programming.pdf %}"><b>Fast(ish) Algorithms for Integer Programming</b></a>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
   <a href="https://joshmpollock.com">Josh Pollock</a>
   <br>
   <i>MIT 6.854 (Advanced Algorithms) Final Project</i>
@@ -130,7 +155,7 @@ layout: default
   <p>
   <a href="https://tvm.apache.org/2020/06/04/tinyml-how-tvm-is-taming-tiny"><b>TinyML - How TVM is Taming Tiny</b></a>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
   <a href="https://github.com/areusch">Andrew Reusch</a>
   <br>
   <i>
@@ -143,10 +168,20 @@ layout: default
   </p>
 
   <h1>Presentation</h1>
+
+  <p>
+  <a href="{% link assets/embedders_poster.pdf %}"><b>A Theory of Equivalence-Preserving Embeddings</b></a>
+  <br>
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
+  <a href="https://web.mit.edu/jmmichel/www/">Jesse Michel</a>,
+  <br>
+  <i>Poster Presentation at NSF Expeditions in Computing Neurosymbolic Meeting (October 2022)</i>
+  </p>
+
   <p>
   <a href="https://youtu.be/WDo-k0syZi4?t=1494"><b>µTVM: TVM on Bare-Metal Devices</b></a>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/">Logan Weber</a>
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>
   <br>
   <i>Lightning Talk at TVM Conference 2019</i>
   </p>
@@ -154,7 +189,7 @@ layout: default
   <p>
   <b>µTVM: Deep Learning on Bare-Metal Devices</b>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/">Logan Weber</a>
+  <a href="https://weberlo.github.io">Logan Weber</a>
   <br>
   <i>Poster Presentation at ARM Research Summit 2019</i>
   </p>
@@ -162,7 +197,7 @@ layout: default
   <p>
   <a href="https://www.youtube.com/watch?v=VUQ9IAK0SR0"><b>µTVM: Deep Learning on the Low-Power Edge</b></a>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
   <a href="https://homes.cs.washington.edu/~patelp1/">Pratyush Patel</a>
   <br>
   <i>Talk at TVM For Fun and Profit Tutorial (FCRC 2019)</i>
@@ -171,7 +206,7 @@ layout: default
   <p>
   <b>Relay: An Extensible Intermediate Language for Deep Learning</b>
   <br>
-  <a href="https://homes.cs.washington.edu/~weberlo/"><b>Logan Weber</b></a>,
+  <a href="https://weberlo.github.io"><b>Logan Weber</b></a>,
   <a href="https://joshmpollock.com">Josh Pollock</a>,
   <a href="https://github.com/MarisaKirisame">Marisa Kirisame</a>
   <br>
