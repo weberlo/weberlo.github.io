@@ -4,14 +4,30 @@ title: Projects
 permalink: /projects/
 ---
 
-<!-- Both projects listed below are a part of the <a href="https://github.com/dmlc/tvm">Apache TVM</a> project. -->
+# Semantic Program Embeddings
+_Role: Co-First Author_
+
+![embedders-summary](/images/embedders-summary.png)
+
+This project is something I worked on earlier in grad school with some fantastic collaborators.
+Initially, we were interested in developing a technique to embed programming languages by leveraging their unique properties.
+At the time, there was a big push for code models that were adversarially robust, and the usual way that was implemented was by training for models whose predictions were invariant to semantics-preserving transformations.
+In [our first preprint](/assets/a_theory_of_semantic_program_embeddings.pdf), we proposed a technique for embedding numerical programs using orthogonal polynomials.
+At some point, we realized we didn't even know how difficult of a task this is, so our goal became to study the computational complexity of embedding functions that possess this property, leading to [our second preprint](/assets/a_theory_of_equivalence_preserving_embeddings.pdf).
+The core insights that came from this study were (1) that a language must have finitely many semantic equivalence classes for such an embedding function to exist and (2) that such an embedding function exists iff your language has an efficient canonicalizer.
+The theory isn't deep here, and with our definitions in place, these insights are actually quite trivial.
+So the contribution here was really just a lucid set of definitions rather than a theory of great technical complexity.
+We had trouble publishing this work because it turns out the languages that can be tractably embedded are extremely simple, so the work can be construed as pessimistic.
+Machine learning reviewers were insistent that we show how it applies to Python, but to develop the theory to make statements about a semantic object as messy and complex as Python would have taken longer than we all had patience for.
+The trick we didn't learn soon enough was to rename everything to be about mathematical objects and never say the word "program", which would have recalibrated the reviewers' expectations.
+
 
 # µTVM
 _Role: Principal Investigator_
 
 ![microtvm-logo](/images/microtvm-logo.png)
 
-µTVM brings the power of [Apache
+[µTVM](https://github.com/apache/incubator-tvm/issues/2563) brings the power of [Apache
 TVM](https://github.com/apache/incubator-tvm) to bare-metal devices. By
 building a lightweight and device-agnostic runtime for interacting with
 microcontrollers, µTVM plugs directly into the TVM stack and provides
@@ -39,7 +55,7 @@ _Role: Collaborator_
 
 <b>Every time you ask Amazon Alexa a question, Relay is being used.</b>
 
-Relay is a functional and differentiable intermediate representation for
+[Relay](https://github.com/apache/incubator-tvm/issues/1673) is a functional and differentiable intermediate representation for
 machine learning applications, which ditches the design of traditional
 computation-graph-based IRs, and instead opts to be a full-fledged
 programming language. The design is surprisingly similar to the language SML,
