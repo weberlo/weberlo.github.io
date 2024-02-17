@@ -9,21 +9,22 @@ _Role: Co-First Author_
 
 ![embedders-summary](/images/embedders-summary.png)
 
-This project is something I worked on earlier in grad school with some fantastic collaborators.
-Initially, we were interested in developing a technique to embed programming languages by leveraging their unique properties.
-At the time, there was a big push for code models that were adversarially robust, and the usual way that was implemented was by training for models whose predictions were invariant to semantics-preserving transformations.
-In [our first preprint](/assets/a_theory_of_semantic_program_embeddings.pdf), we proposed a technique for embedding numerical programs using orthogonal polynomials.
+The goal of this project was to understand how to embed programs into vector spaces in a way that respects program semantics, as many machine learning techniques attempt to do.
+In most areas of machine learning (e.g., computer vision and natural language processing), researchers may claim an embedding technique "captures semantics", and because there's no formal way to ground the term "semantics", it's usually interpreted loosely.
+Programming languages are different; a programming language has a very precise notion of semantics that can be formally reasoned about.
+Our first insight was that because programming languages are formal objects, one can theoretically reason about semantic embeddings of them.
+There are many types of semantic properties one may wish to embed, and in [our first preprint](/assets/a_theory_of_semantic_program_embeddings.pdf), we focused on formalizing the frequently cited desideratum that ``embeddings of similar programs are close'' and developed a technique that directly optimizes for this property.
+Our technique embeds numerical programs using orthogonal polynomials and produces embeddings that preserve distances more effectively than a BERT-Tiny.
 
-At some point, we realized we didn't even know how difficult of a task this is, so our goal became to study the computational complexity of embedding functions that possess this property, leading to [our second preprint](/assets/a_theory_of_equivalence_preserving_embeddings.pdf).
-The core insights that came from this study were (1) that a language must have finitely many semantic equivalence classes for such an embedding function to exist and (2) that such an embedding function exists iff your language has an efficient canonicalizer.
-The theory isn't deep here, and with our definitions in place, these insights are actually quite trivial.
-So the contribution here was really just a lucid set of definitions rather than a theory of great technical complexity.
-We had trouble publishing this work because it turns out the languages that can be tractably embedded are extremely simple, so the work can be construed as pessimistic.
-Machine learning reviewers were also insistent that we show how it applies to Python, but to develop the theory to make statements about a semantic object as messy and complex as Python would have taken longer than we all had patience for.
-The trick we didn't learn soon enough was to rename everything to be about mathematical objects and never say the word "program", which would have recalibrated the reviewers' expectations.
+Since there is not a canonical notion of distance between non-numerical programs, we sought a more fundamental property than distance preservation.
+At the time of this work, there was a push for code models that were adversarially robust, often implemented by training for embeddings that are invariant to semantics-preserving transformations.
+The implication of this invariance is that the embedding preserves semantic equivalences, and in [our second preprint](/assets/a_theory_of_equivalence_preserving_embeddings.pdf), we theoretically characterized the computational complexity of producing such embeddings.
+The core insights that came from this study were (1) that a programming language must have finitely many semantic equivalence classes for such an embedding function to exist and (2) that such an embedding function exists iff your programming language has an efficient canonicalizer.
+The theory isn't deep here, and with our definitions in place, these insights are trivial.
+The contribution here was a lucid set of definitions rather than a theory of great technical complexity.
 
 # µTVM
-_Role: Principal Investigator_
+_Role: First Author_
 
 ![microtvm-logo](/images/microtvm-logo.png)
 
