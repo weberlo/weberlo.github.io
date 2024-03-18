@@ -11,9 +11,9 @@ _Role: Co-First Author_
 
 The goal of this project was to understand how to embed programs into vector spaces in a way that respects program semantics, as many machine learning techniques attempt to do.
 In most areas of machine learning (e.g., computer vision and natural language processing), researchers may claim an embedding technique "captures semantics", and because there's no formal way to ground the term "semantics", it's usually interpreted loosely.
-Programming languages are different; a programming language has a very precise notion of semantics that can be formally reasoned about.
+Programming languages are different; a programming language has a very precise notion of semantics.
 Our first insight was that because programming languages are formal objects, one can theoretically reason about semantic embeddings of them.
-There are many types of semantic properties one may wish to embed, and in [our first preprint](/assets/a_theory_of_semantic_program_embeddings.pdf), we focused on formalizing the frequently cited desideratum that ``embeddings of similar programs are close'' and developed a technique that directly optimizes for this property.
+There are many types of semantic properties one may wish to embed, and in [our first preprint](/assets/a_theory_of_semantic_program_embeddings.pdf), we focused on formalizing the frequently cited desideratum that ``embeddings of similar programs are close'' and developed a technique motivated by optimization for this property.
 Our technique embeds numerical programs using orthogonal polynomials and produces embeddings that preserve distances more effectively than a BERT-Tiny.
 
 Since there is not a canonical notion of distance between non-numerical programs, we sought a more fundamental property than distance preservation.
