@@ -29,10 +29,10 @@ _Role: First Author_
 ![microtvm-logo](/images/microtvm-logo.png)
 
 [µTVM](https://github.com/apache/incubator-tvm/issues/2563) brings the power of [Apache
-TVM](https://github.com/apache/incubator-tvm) to bare-metal devices. By
-building a lightweight and device-agnostic runtime for interacting with
+TVM](https://github.com/apache/incubator-tvm) to bare-metal devices. Using 
+a lightweight and device-agnostic runtime for interacting with
 microcontrollers, µTVM plugs directly into the TVM stack and provides
-automatic optimization of ML operators and easy deployment. The figure below
+automatic optimization of ML operators. The figure below
 gives an idea of where µTVM sits in TVM.
 
 <!-- TODO: use image resize proxy once images are uploaded to github -->
@@ -41,11 +41,10 @@ gives an idea of where µTVM sits in TVM.
 
 To provide automatic optimization, µTVM makes use of
 [AutoTVM](https://arxiv.org/abs/1805.08166) (depicted below). AutoTVM
-suggests candidate kernel implementations in C, and the candidates are then
-compiled and loaded onto the device via
+suggests candidate kernel implementations in C, which µTVM then
+compiles and loads onto the device via
 [JTAG](https://en.wikipedia.org/wiki/JTAG). Random inputs are used to time
-the execution of kernels, which is fed into AutoTVM's search algorithm. Over
-time, by intelligently navigating the space of implementations, AutoTVM
+the execution of kernels, and these inputs are then fed into AutoTVM's search algorithm. By intelligently navigating the space of implementations, AutoTVM
 tailors candidate kernels to the architectural properties of the device,
 using only timing information.
 
