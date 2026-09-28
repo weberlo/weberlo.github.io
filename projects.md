@@ -4,6 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
+# Neural Surrogate Compilation
+_Role: First Author_
+
+WIP
+
 # Semantic Program Embeddings
 _Role: Co-First Author_
 
@@ -53,7 +58,8 @@ using only timing information.
 # Relay
 _Role: Collaborator_
 
-<b>Every time you ask Amazon Alexa a question, Relay is being used.</b>
+<b>At least as of 2020, every time you asked Amazon Alexa a question, Relay was being used.</b>
+
 
 [Relay](https://github.com/apache/incubator-tvm/issues/1673) is a functional and differentiable intermediate representation for
 machine learning applications, which ditches the design of traditional
